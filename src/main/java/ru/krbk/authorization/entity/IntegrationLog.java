@@ -12,12 +12,16 @@ public class IntegrationLog {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
+    @Column(name = "log_time", nullable = false)
     private LocalDateTime logTime;
 
+    @Column(name = "body", nullable = false, length = 1555)
     private String body;
 
+    @Column(name = "status_text", nullable = false, length = 1555)
     private String statusText;
 
+    @Column(name = "status_num", nullable = false)
     private int statusNum;
 
     public IntegrationLog(

@@ -9,13 +9,16 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-
+    @Column(name = "name", nullable = false)
     private String name;
 
+    @Column(name = "age", nullable = false)
     private int age;
 
+    @Column(name = "email", nullable = false, length = 50)
     private String email;
 
+    @Column(name = "is_verify", nullable = false)
     private boolean isVerify;
 
     // Геттеры и сеттеры
