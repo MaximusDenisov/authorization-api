@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "maximum": 30
+    },
+    "age": {
+      "type": "integer",
+      "maxLength": 30
+    },
+    "email": {
+      "type": "string",
+      "maxLength": 30
+    },
+    "verify": {
+      "type": "boolean"
+    }
+  },
+  "required": ["name", "age", "email", "verify"]
+}
