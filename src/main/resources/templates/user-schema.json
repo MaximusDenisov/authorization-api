@@ -8,15 +8,14 @@
     },
     "age": {
       "type": "integer",
-      "maxLength": 30
+      "minimum": 1,
+      "maximum": 100,
+      "maxLength": 3
     },
     "email": {
       "type": "string",
       "maxLength": 30
-    },
-    "verify": {
-      "type": "boolean"
     }
   },
-  "required": ["name", "age", "email", "verify"]
+  "required": ["name", "age", "email"]
 }
