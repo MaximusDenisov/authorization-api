@@ -52,7 +52,7 @@ public class UserController {
                 return ResponseEntity.badRequest().body(e.getMessage());
             }
         } else {
-            return ResponseEntity.badRequest().body("Такой пользователь уже зарегистрирован!");
+            return ResponseEntity.badRequest().body("Пользователь с таким e-mail уже зарегистрирован!");
         }
     }
 
